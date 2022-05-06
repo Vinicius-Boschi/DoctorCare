@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+//Primary Colors
+$brand-green: #00856F;
+$brand-green-light: #DCE9E2;
+$brand-green-light-02: #F7F9F9;
+$brand-beige: #FFFAF1;
+$brand-green-hover: #00453A;
+
+//Secondary Colors
+$gray-headline: #061800;
+$gray-paragraph: #6F6F6F;
+$white: #FFFFFF;
+
+* {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.header {
+
+    background-color: $brand-green;
+
+    &__navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    &__text {
+        color: $white;
+        font-size: 1.5rem;
+        
+        &_bold {
+            font-weight: bold;
+        }
+    }
+
+    &__section {
+        display: contents;
+    }
+
+    &__list {
+        display: flex;
+        letter-spacing: .2rem;
+    }
+
+    &__links {
+        padding-left: 1rem;
+        text-decoration: none;
+        color: $brand-green-light-02;
+    }
+
+    &__button {
+        border: 1px solid $white;
+        background: none;
+        color: $white;
+        border-radius: 1rem;
+        padding: .6rem;
+        text-transform: uppercase;
+        width: 10rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $brand-green-hover;
+            transition: 1s;
+        }
+    }
+
+}

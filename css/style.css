@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+.header {
+  background-color: #00856F;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+}
+.header__text {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+.header__text_bold {
+  font-weight: bold;
+}
+.header__section {
+  display: contents;
+}
+.header__list {
+  display: flex;
+  letter-spacing: 0.2rem;
+}
+.header__links {
+  padding-left: 1rem;
+  text-decoration: none;
+  color: #F7F9F9;
+}
+.header__button {
+  border: 1px solid #FFFFFF;
+  background: none;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  text-transform: uppercase;
+  width: 10rem;
+  cursor: pointer;
+}
+.header__button:hover {
+  background-color: #00453A;
+  transition: 1s;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,49 +1,129 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
-* {
+html, body {
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
-.header {
-  background-color: #00856F;
-}
-.header__navbar {
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1.5rem;
+  width: auto;
+  background-color: #00856F;
 }
-.header__text {
-  color: #FFFFFF;
+.navbar__text {
+  color: #061800;
   font-size: 1.5rem;
 }
-.header__text_bold {
+.navbar__text_bold:nth-child(1) {
+  color: #FFFFFF;
   font-weight: bold;
 }
-.header__section {
+.navbar__section {
   display: contents;
 }
-.header__list {
+.navbar__list {
   display: flex;
   letter-spacing: 0.2rem;
 }
-.header__links {
+.navbar__links {
   padding-left: 1rem;
   text-decoration: none;
-  color: #F7F9F9;
+  color: #FFFFFF;
 }
-.header__button {
+.navbar__button {
   border: 1px solid #FFFFFF;
   background: none;
   color: #FFFFFF;
   border-radius: 1rem;
-  padding: 0.6rem;
+  padding: 0.5rem;
   text-transform: uppercase;
   width: 10rem;
   cursor: pointer;
 }
-.header__button:hover {
+.navbar__button:hover {
   background-color: #00453A;
+  color: #FFFFFF;
   transition: 1s;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5rem;
+  line-height: 1.5;
+}
+.main__title {
+  color: #00856F;
+  text-transform: uppercase;
+}
+.main__wave {
+  animation-name: wave-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 80% 80%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+.main__subtitle {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 60%;
+}
+.main__text {
+  width: 53%;
+  line-height: 2;
+}
+.main__button {
+  border: 1px solid #FFFFFF;
+  background: #00856F;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: 15rem;
+  cursor: pointer;
+}
+.main__button:hover {
+  background-color: #00453A;
+  color: #FFFFFF;
+  transition: 1s;
+}
+.main__button_whats {
+  display: block;
+}
+.main__button_text {
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
+}
+.main__img {
+  position: absolute;
+  right: 15%;
+  top: 12%;
+}
+.main__picture {
+  display: inline-block;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */

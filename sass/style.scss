@@ -12,27 +12,28 @@ $gray-headline: #061800;
 $gray-paragraph: #6F6F6F;
 $white: #FFFFFF;
 
-* {
+html,body {
     font-family: 'DM Sans', sans-serif;
-}
+    scroll-behavior: smooth;
+} 
 
-.header {
-
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    width: auto;
     background-color: $brand-green;
 
-    &__navbar {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 1.5rem;
-    }
-
     &__text {
-        color: $white;
+        color: $gray-headline;
         font-size: 1.5rem;
-        
+
         &_bold {
-            font-weight: bold;
+            &:nth-child(1){
+                color: $white;
+                font-weight: bold;
+            }
         }
     }
 
@@ -48,7 +49,7 @@ $white: #FFFFFF;
     &__links {
         padding-left: 1rem;
         text-decoration: none;
-        color: $brand-green-light-02;
+        color: $white;
     }
 
     &__button {
@@ -56,15 +57,94 @@ $white: #FFFFFF;
         background: none;
         color: $white;
         border-radius: 1rem;
-        padding: .6rem;
+        padding: .5rem;
         text-transform: uppercase;
         width: 10rem;
         cursor: pointer;
 
         &:hover {
             background-color: $brand-green-hover;
+            color: $white;
             transition: 1s;
         }
     }
+}
 
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+    line-height: 1.5;
+
+    &__title {
+        color: $brand-green;
+        text-transform: uppercase;
+    }
+
+    &__wave {
+        animation-name: wave-animation; 
+        animation-duration: 2s;    
+        animation-iteration-count: infinite; 
+        transform-origin: 80% 80%;       
+        display: inline-block;
+        
+        @keyframes wave-animation {
+        10% { transform: rotate(14.0deg) }
+        20% { transform: rotate(-8.0deg) }
+        30% { transform: rotate(14.0deg) }
+        40% { transform: rotate(-4.0deg) }
+        50% { transform: rotate(10.0deg) }
+        }
+    }
+
+    &__subtitle {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 3rem;
+        width: 60%;
+    }
+
+    &__text {
+        width: 53%;
+        line-height: 2;
+    }
+
+    &__button {
+        border: 1px solid $white;
+        background: $brand-green;
+        color: $white;
+        border-radius: 1rem;
+        padding: .5rem;
+        text-transform: uppercase;
+        width: 15rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $brand-green-hover;
+            color: $white;
+            transition: 1s;
+        }
+
+        &_whats {
+            display: block;
+        }
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            margin-top: -1rem;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 15%;
+        top: 12%;
+    }
+
+    &__picture {
+        display: inline-block;
+       width: 80%;
+    }
 }

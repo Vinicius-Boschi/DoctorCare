@@ -71,11 +71,16 @@ html,body {
 }
 
 .main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 5rem;
-    line-height: 1.5;
+    background-color: $brand-green-light-02;
+    &__welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 8rem;
+        line-height: 1.5;
+        background-color: $brand-green-light;
+        height: 35rem;
+    }
 
     &__title {
         color: $brand-green;
@@ -99,25 +104,25 @@ html,body {
     }
 
     &__subtitle {
-        display: inline-block;
         font-weight: 700;
         font-size: 3rem;
-        width: 60%;
+        width: 40%;
     }
 
     &__text {
-        width: 53%;
+        width: 35%;
         line-height: 2;
     }
 
     &__button {
-        border: 1px solid $white;
+        border: 1.5px solid $white;
         background: $brand-green;
         color: $white;
         border-radius: 1rem;
+        margin-top: 1rem;
         padding: .5rem;
         text-transform: uppercase;
-        width: 15rem;
+        width: 14rem;
         cursor: pointer;
 
         &:hover {
@@ -140,11 +145,146 @@ html,body {
     &__img {
         position: absolute;
         right: 15%;
-        top: 12%;
+        top: 22%;
     }
 
     &__picture {
-        display: inline-block;
        width: 80%;
+    }
+
+    &__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: $brand-beige;
+        border-radius: .7rem;
+        margin: -5rem auto;
+        width: 60%;
+        top: 10%;
+        height: 2rem;
+        padding: 3rem;   
+        text-align: center;
+    }
+
+    &__numbers {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__text {
+      &_number {
+        color: $brand-green;
+        font-size: .7rem;
+      }
+    }
+
+    &__services {
+        position: relative;
+        text-align: center;
+        margin-top: 12rem;
+
+        &_text {
+            color: $brand-green;
+            padding: 1rem;
+        }
+    }
+
+    &__help {
+        font-size: 2rem;
+        font-weight: bold;
+        width: 26%;
+        margin: 0 auto;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: $white;
+        border-radius: .5rem;
+        padding: 2rem;
+        width: 60%;
+        height: 10rem;
+
+        &_title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding-top: 1rem;
+        }
+
+        &_text {
+            line-height: 1.3rem;
+            width: 75%;
+            padding-top: 1rem;
+        }
+    }
+
+    &__check {
+        width: 7%;
+    }
+
+    &__about {
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        background-color: $brand-beige;
+        height: 35rem;
+    }
+
+    &__pic {
+        width: 25vw;
+        padding: 1rem;
+    }
+
+    // &__text_about {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+
+    &__title_about {
+        color: $brand-green;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__subtitle_about {
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        width: 32%;
+        line-height: 1.5;
+    }
+
+    &__text_doctor {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    &__text_contact {
+        font-size: 2rem;
+        font-weight: bold;
+        width: 25%;
+        line-height: 1.5;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        padding: 2rem;
+
+        &_img {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
     }
 }

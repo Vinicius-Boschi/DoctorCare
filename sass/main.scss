@@ -8,6 +8,12 @@
         line-height: 1.5;
         background-color: $brand-green-light;
         height: 35rem;
+
+        @include for-phone-only {
+            align-items: center;
+            padding-left: 0;
+            height: 42rem;
+        }
     }
 
     &__title {
@@ -35,11 +41,22 @@
         font-weight: 700;
         font-size: 3rem;
         width: 40%;
+
+        @include for-phone-only {
+            font-size: 2rem;
+            width: 85%;
+            text-align: center;
+        }
     }
 
     &__text {
         width: 38%;
         line-height: 2;
+
+        @include for-phone-only {
+            width: 70%;
+            text-align: center;
+        }
     }
 
     &__button {
@@ -74,6 +91,14 @@
         position: absolute;
         right: 15%;
         top: 22%;
+
+        @include for-phone-only {
+            position: inherit;
+            display: flex;
+            width: 70%;
+            justify-content: center;
+            margin: -9rem auto;
+        }
     }
 
     &__picture {
@@ -92,6 +117,15 @@
         height: 2rem;
         padding: 3rem;   
         text-align: center;
+
+        @include for-phone-only {
+            grid-template-columns: repeat(1, 1fr);
+            width: 25%;
+            height: 15rem;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 5rem;
+        }
     }
 
     &__numbers {
@@ -122,6 +156,10 @@
         font-weight: bold;
         width: 26%;
         margin: 0 auto;
+
+        @include for-phone-only {
+            width: 76%;
+        }
     }
 
     &__cards {
@@ -129,6 +167,10 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 2rem;
         gap: 1rem;
+
+        @include for-phone-only {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
     &__card {
@@ -140,6 +182,10 @@
         padding: 2rem;
         width: 60%;
         height: 10rem;
+
+        @include for-phone-only {
+            height: auto;
+        }
 
         &_title {
             font-weight: bold;
@@ -156,6 +202,10 @@
 
     &__check {
         width: 7%;
+
+        @include for-phone-only {
+            width: 12%;
+        }
     }
 
     &__about {
@@ -164,11 +214,28 @@
         margin-top: 5rem;
         background-color: $brand-beige;
         height: 35rem;
+
+        @include for-phone-only {
+            flex-direction: column-reverse;
+            justify-content: center;
+            height: 55rem;
+        }
     }
 
     &__pic {
         width: 25vw;
         padding: 1rem;
+
+        @include for-phone-only {
+            width: 70%;
+            text-align: center;
+        }
+    }
+
+    &__text_about {
+        @include for-phone-only {
+            padding: 1rem;
+        }
     }
 
     &__title_about {
@@ -183,11 +250,19 @@
         font-weight: bold;
         width: 32%;
         line-height: 1.5;
+
+        @include for-phone-only {
+            width: 65%;
+        }
     }
 
     &__text_doctor {
         width: 50%;
         padding: 1rem;
+
+        @include for-phone-only {
+            width: auto;
+        }
     }
 
     &__contact {
@@ -202,10 +277,18 @@
             flex-direction: column;
             align-items: center;
         }
+
+        @include for-phone-only {
+            flex-direction: column-reverse;
+        }
     }
 
     &__pic_man {
         width: 35vw;
+
+        @include for-phone-only {
+            width: 50vw;
+        }
     }
     
     &__text_contact {
@@ -251,6 +334,10 @@
         &.show {
             opacity: 1;
             visibility: visible;
+        }
+
+        @include for-phone-only {
+            right: 2rem;
         }
     }
 }

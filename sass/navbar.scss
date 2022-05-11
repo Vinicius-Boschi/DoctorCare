@@ -6,6 +6,10 @@
     width: auto;
     background-color: $brand-green;
 
+    @include for-phone-only {
+        width: auto;
+    }
+
     &__text {
         color: $white;
         font-size: 1.5rem;
@@ -17,17 +21,47 @@
 
     &__section {
         display: contents;
+
+        @include for-phone-only {
+            &_responsive {
+                position: relative;
+
+                .navbar__links {    
+                    display: block;
+                    padding: 1rem;
+                }
+            }
+        }
     }
 
     &__list {
         display: flex;
         letter-spacing: .2rem;
-    }
 
+        @include for-phone-only {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }   
+    
     &__links {
         padding-left: 1rem;
         text-decoration: none;
         color: $white;
+        display: block;
+        
+        &.icon {
+            display: none;
+        }
+
+        @include for-phone-only {
+            display: none;
+            
+            &.icon {
+                display: block;
+                float: right;
+            }
+        }
     }
 
     &__button {
@@ -44,6 +78,10 @@
             background-color: $brand-green-hover;
             color: $white;
             transition: 1s;
+        }
+
+        @include for-phone-only {
+            display: none;
         }
     }
 }

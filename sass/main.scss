@@ -218,4 +218,39 @@
     &__street {
         padding: 1rem;
     }
+
+    &__btn {
+        display: inline-block;
+        background-color: $gray-paragraph;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+
+        &::after {
+            content: "\f062";
+            font-family: FontAwesome;
+            font-size: 2em;
+            line-height: 50px;
+            color: $white;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $brand-green-hover;
+        }
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }

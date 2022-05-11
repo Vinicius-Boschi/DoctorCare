@@ -12,6 +12,14 @@ $gray-headline: #061800;
 $gray-paragraph: #6F6F6F;
 $white: #FFFFFF;
 
+@mixin for-phone-only {
+    @media (min-width: 375px) and (max-width: 540px) { @content; }
+}
+
+@mixin for-tablet-only {
+    @media (min-width: 541px) and (max-width: 999px) { @content; }
+}
+
 html,body {
     font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;

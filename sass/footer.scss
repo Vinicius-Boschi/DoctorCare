@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $brand-green;
+    color: $white;
+    height: 15rem;
+
+    &__name {
+        font-size: 2rem;
+        padding: .5rem;
+        &_bold {
+            font-weight: bold;
+        }
+    }
+
+    &__copy, &__rights {
+        font-size: .7rem;
+        padding: .5rem;
+    }
+}

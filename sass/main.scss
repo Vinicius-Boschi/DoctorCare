@@ -1,12 +1,12 @@
 .main {
-    background-color: $brand-green-light-02;
+    background-color: $brand-light;
     &__welcome {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-left: 8rem;
         line-height: 1.5;
-        background-color: $brand-green-light;
+        background-color: $brand-blue-light;
         height: 35rem;
 
         @include for-phone-only {
@@ -17,7 +17,7 @@
     }
 
     &__title {
-        color: $brand-green;
+        color: $brand-blue;
         text-transform: uppercase;
     }
 
@@ -61,7 +61,7 @@
 
     &__button {
         border: 1.5px solid $white;
-        background: $brand-green;
+        background: $brand-blue;
         color: $white;
         border-radius: 1rem;
         margin-top: 1rem;
@@ -71,7 +71,7 @@
         cursor: pointer;
 
         &:hover {
-            background-color: $brand-green-hover;
+            background-color: $brand-blue-hover;
             color: $white;
             transition: 1s;
         }
@@ -135,7 +135,7 @@
 
     &__text {
       &_number {
-        color: $brand-green;
+        color: $brand-blue;
         font-size: .7rem;
       }
     }
@@ -146,7 +146,7 @@
         margin-top: 12rem;
 
         &_text {
-            color: $brand-green;
+            color: $brand-blue;
             padding: 1rem;
         }
     }
@@ -239,7 +239,7 @@
     }
 
     &__title_about {
-        color: $brand-green;
+        color: $brand-blue;
         padding: 1rem;
         text-transform: uppercase;
     }
@@ -328,7 +328,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: $brand-green-hover;
+            background-color: $brand-blue-hover;
         }
 
         &.show {

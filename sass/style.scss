@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 //Primary Colors
-$brand-green: #00856F;
-$brand-green-light: #DCE9E2;
-$brand-green-light-02: #F7F9F9;
+$brand-blue: #0052E9;
+$brand-blue-light: #0087f669;
+$brand-light: #F7F9F9;
 $brand-beige: #FFFAF1;
-$brand-green-hover: #00453A;
+$brand-blue-hover: #0074FE;
 
 //Secondary Colors
 $gray-headline: #061800;
@@ -30,12 +30,12 @@ html,body {
 }
 
 ::-webkit-scrollbar-track {
-    background: $brand-green-light-02;
+    background: $brand-light;
     border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $brand-green;
+    background: $brand-blue;
     border-radius: 30px;
     visibility: visible;
 }

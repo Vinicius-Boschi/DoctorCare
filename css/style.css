@@ -14,7 +14,7 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00856F;
+  background: #0052E9;
   border-radius: 30px;
   visibility: visible;
 }
@@ -25,7 +25,7 @@ html, body {
   align-items: center;
   padding: 1.5rem;
   width: auto;
-  background-color: #00856F;
+  background-color: #0052E9;
 }
 @media (min-width: 375px) and (max-width: 540px) {
   .navbar {
@@ -90,7 +90,7 @@ html, body {
   cursor: pointer;
 }
 .navbar__button:hover {
-  background-color: #00453A;
+  background-color: #0074FE;
   color: #FFFFFF;
   transition: 1s;
 }
@@ -109,7 +109,7 @@ html, body {
   justify-content: center;
   padding-left: 8rem;
   line-height: 1.5;
-  background-color: #DCE9E2;
+  background-color: #0087f669;
   height: 35rem;
 }
 @media (min-width: 375px) and (max-width: 540px) {
@@ -120,7 +120,7 @@ html, body {
   }
 }
 .main__title {
-  color: #00856F;
+  color: #0052E9;
   text-transform: uppercase;
 }
 .main__wave {
@@ -171,7 +171,7 @@ html, body {
 }
 .main__button {
   border: 1.5px solid #FFFFFF;
-  background: #00856F;
+  background: #0052E9;
   color: #FFFFFF;
   border-radius: 1rem;
   margin-top: 1rem;
@@ -181,7 +181,7 @@ html, body {
   cursor: pointer;
 }
 .main__button:hover {
-  background-color: #00453A;
+  background-color: #0074FE;
   color: #FFFFFF;
   transition: 1s;
 }
@@ -238,7 +238,7 @@ html, body {
   font-weight: bold;
 }
 .main__text_number {
-  color: #00856F;
+  color: #0052E9;
   font-size: 0.7rem;
 }
 .main__services {
@@ -247,7 +247,7 @@ html, body {
   margin-top: 12rem;
 }
 .main__services_text {
-  color: #00856F;
+  color: #0052E9;
   padding: 1rem;
 }
 .main__help {
@@ -335,7 +335,7 @@ html, body {
   }
 }
 .main__title_about {
-  color: #00856F;
+  color: #0052E9;
   padding: 1rem;
   text-transform: uppercase;
 }
@@ -419,7 +419,7 @@ html, body {
 }
 .main__btn:hover {
   cursor: pointer;
-  background-color: #00453A;
+  background-color: #0074FE;
 }
 .main__btn.show {
   opacity: 1;
@@ -435,7 +435,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #00856F;
+  background-color: #0052E9;
   color: #FFFFFF;
   height: 15rem;
 }

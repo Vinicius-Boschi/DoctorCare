@@ -4,7 +4,7 @@
     align-items: center;
     padding: 1.5rem;
     width: auto;
-    background-color: $brand-green;
+    background-color: $brand-blue;
 
     @include for-phone-only {
         width: auto;
@@ -75,7 +75,7 @@
         cursor: pointer;
 
         &:hover {
-            background-color: $brand-green-hover;
+            background-color: $brand-blue-hover;
             color: $white;
             transition: 1s;
         }

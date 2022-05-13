@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Doctor Care</title>
 </head>
-<body>
+<body class="body">
 
     <nav class="navbar" id="home">
         <h1 class="navbar__text">Doctor<span class="navbar__text_bold">Care</span></h1>
             <section class="navbar__section" id="active">
+                <span class="navbar__bars"></span>
                 <ul class="navbar__list">
                         <li class="navbar__lists">
                         <a href="#home" class="navbar__links">Início</a>
@@ -30,13 +31,10 @@
                     <li class="navbar__lists">
                         <a href="#media" class="navbar__links">Redes Sociais</a>
                     </li>
-                    <li class="navbar__lists bars">
-                        <a href="#" class="navbar__links icon" onclick="responsive()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </li>
                 </ul>
-                <button class="navbar__button">Agendar Consulta</button>
+                <div class="navbar__button">
+                    <button class="navbar__consult">Agendar Consulta</button>
+                </div>  
             </section>
     </nav>
 

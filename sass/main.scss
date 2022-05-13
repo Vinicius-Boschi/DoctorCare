@@ -61,7 +61,7 @@
 
     &__button {
         border: 1.5px solid $white;
-        background: $brand-blue;
+        background: $brand-red-light;
         color: $white;
         border-radius: 1rem;
         margin-top: 1rem;
@@ -71,7 +71,7 @@
         cursor: pointer;
 
         &:hover {
-            background-color: $brand-blue-hover;
+            background-color: $brand-red-hover;
             color: $white;
             transition: 1s;
         }
@@ -93,11 +93,7 @@
         top: 22%;
 
         @include for-phone-only {
-            position: inherit;
-            display: flex;
-            width: 70%;
-            justify-content: center;
-            margin: -9rem auto;
+            display: none;
         }
     }
 
@@ -117,15 +113,6 @@
         height: 2rem;
         padding: 3rem;   
         text-align: center;
-
-        @include for-phone-only {
-            grid-template-columns: repeat(1, 1fr);
-            width: 25%;
-            height: 15rem;
-            align-items: center;
-            justify-content: space-evenly;
-            margin-top: 5rem;
-        }
     }
 
     &__numbers {
@@ -228,7 +215,6 @@
 
         @include for-phone-only {
             width: 70%;
-            text-align: center;
         }
     }
 
@@ -304,7 +290,7 @@
 
     &__btn {
         display: inline-block;
-        background-color: $gray-paragraph;
+        background-color: $brand-red-light;
         width: 50px;
         height: 50px;
         text-align: center;
@@ -328,7 +314,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: $brand-blue-hover;
+            background-color: $brand-red-hover;
         }
 
         &.show {

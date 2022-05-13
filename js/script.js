@@ -13,11 +13,9 @@ button.on('click', function(e) {
     $('html, body').animate({scrollTop: 0}, '300')
 })
 
-function responsive() { 
-    let x = document.getElementById("active")
-    if (x.className === "navbar__section") { 
-      x.className += " navbar__section_responsive"
-    } else {
-      x.className = "navbar__section"
-    }
-}  
+$(".navbar__bars").click(function() {
+    $(this).toggleClass("active") 
+    $(".body").toggleClass("active")
+    $(".navbar__list").toggleClass("active")
+    $(".navbar__button").toggleClass("active")
+})

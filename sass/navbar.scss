@@ -4,10 +4,13 @@
     align-items: center;
     padding: 1.5rem;
     width: auto;
-    background-color: $brand-green;
+    background-color: $brand-blue;
 
     @include for-phone-only {
+        display: inherit;
         width: auto;
+        align-items: baseline;
+        height: 3rem;
     }
 
     &__text {
@@ -23,65 +26,116 @@
         display: contents;
 
         @include for-phone-only {
-            &_responsive {
-                position: relative;
+            display: initial;
+        }
+    }
 
-                .navbar__links {    
-                    display: block;
-                    padding: 1rem;
-                }
+    &__bars {
+        display: block;
+        
+        @include for-phone-only {
+            display: flex;
+            flex-direction: column;
+            margin: -1.5rem 2rem;
+            height: 2rem;
+            width: 2rem;
+            border-top: 4px solid;
+            position: relative;
+            cursor: pointer;
+            float: right;
+
+            &::after, &::before {
+                content: "";
+                display: block;
+                height: 4px;
+                margin-top: 6px;
+                background: currentColor;
+                position: relative;
+                transition: .3s ease;
+            }
+
+            &.active {
+                border-top-color: transparent;
+            }
+
+            &.active::after {
+                margin-top: 0px;
+                top: 2px;
+                transform: rotate(45deg);
+            }
+
+            &.active::before {
+                margin-top: 0px;
+                top: 6px;
+                transform: rotate(135deg);
             }
         }
     }
+
 
     &__list {
         display: flex;
         letter-spacing: .2rem;
 
         @include for-phone-only {
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-    }   
-    
-    &__links {
-        padding-left: 1rem;
-        text-decoration: none;
-        color: $white;
-        display: block;
-        
-        &.icon {
-            display: none;
-        }
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;    
+            opacity: 0;
+            visibility: hidden;
+            margin: 0rem -1.5rem 0 -1.5rem;
+            transform: translate3d(0, -50px, 0);
+            transition: .3s;
+            background: $brand-light;
+            height: 20rem;
 
-        @include for-phone-only {
-            display: none;
-            
-            &.icon {
-                display: block;
-                float: right;
+            &.active {
+                visibility: visible;
+                opacity: 1;
+                transform: translate3d(0, 0, 0)
             }
         }
     }
-
-    &__button {
-        border: 1px solid $white;
-        background: none;
-        color: $white;
-        border-radius: 1rem;
-        padding: .5rem;
-        text-transform: uppercase;
-        width: 10rem;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $brand-green-hover;
-            color: $white;
-            transition: 1s;
-        }
+    
+    &__links {
+        padding-left: 1rem; 
+        text-decoration: none;
+        color: $brand-light;
+        display: block;
 
         @include for-phone-only {
-            display: none;
+            color: $brand-blue;
         }
+    }
+
+    &__button {     
+        @include for-phone-only {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            margin: 0rem -1.5rem 0 -1.5rem;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate3d(0, -50px, 0);
+            transition: .3s;
+            background: #F9FAFB;
+        }
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translate3d(0, 0, 0)
+        }
+    }
+
+    &__consult {
+        border: 1.5px solid #FFFFFF;
+        background: #DF6D79;
+        color: #FFFFFF;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        cursor: pointer;
     }
 }

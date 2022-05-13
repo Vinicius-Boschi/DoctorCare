@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 //Primary Colors
-$brand-green: #00856F;
-$brand-green-light: #DCE9E2;
-$brand-green-light-02: #F7F9F9;
+$brand-blue: #468ECB;
+$brand-blue-light: #93C9F7;
+$brand-red-light: #DF6D79;
+$brand-light: #F7F9F9;
 $brand-beige: #FFFAF1;
-$brand-green-hover: #00453A;
+$brand-red-hover: #EC4D5D;
 
 //Secondary Colors
 $gray-headline: #061800;
@@ -13,29 +14,25 @@ $gray-paragraph: #6F6F6F;
 $white: #FFFFFF;
 
 @mixin for-phone-only {
-    @media (min-width: 375px) and (max-width: 540px) { @content; }
+    @media (min-width: 375px) and (max-width: 999px) { @content; }
 }
 
-@mixin for-tablet-only {
-    @media (min-width: 541px) and (max-width: 999px) { @content; }
-}
-
-html,body {
-    font-family: 'DM Sans', sans-serif;
+html {
+    font-family: 'DM Sans';
     scroll-behavior: smooth;
-} 
+}
 
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: $brand-green-light-02;
+    background: $brand-light;
     border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $brand-green;
+    background: $brand-blue;
     border-radius: 30px;
     visibility: visible;
 }

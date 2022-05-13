@@ -108,7 +108,7 @@
         }
     }
 
-    &__button {     
+    &__button {   
         @include for-phone-only {
             display: flex;
             flex-direction: column;
@@ -137,5 +137,11 @@
         padding: 0.5rem;
         text-transform: uppercase;
         cursor: pointer;
+
+        &:hover {
+            background-color: $brand-red-hover;
+            color: $white;
+            transition: 1s;
+        }  
     }
 }

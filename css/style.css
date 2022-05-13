@@ -150,6 +150,11 @@ html {
   text-transform: uppercase;
   cursor: pointer;
 }
+.navbar__consult:hover {
+  background-color: #EC4D5D;
+  color: #FFFFFF;
+  transition: 1s;
+}
 
 .main {
   background-color: #F7F9F9;

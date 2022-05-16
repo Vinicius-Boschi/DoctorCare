@@ -17,7 +17,11 @@ $white: #FFFFFF;
     @media (min-width: 375px) and (max-width: 999px) { @content; }
 }
 
+<<<<<<< HEAD
 html {
+=======
+body {
+>>>>>>> 1089d548edc370615e2e64915571fe9bc27024b5
     font-family: 'DM Sans';
     scroll-behavior: smooth;
 }

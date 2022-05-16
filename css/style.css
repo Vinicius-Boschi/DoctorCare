@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+<<<<<<< HEAD
 html {
   font-family: "DM Sans";
   scroll-behavior: smooth;
+=======
+body {
+  font-family: "DM Sans";
+>>>>>>> 1089d548edc370615e2e64915571fe9bc27024b5
 }
 
 ::-webkit-scrollbar {
@@ -150,11 +155,14 @@ html {
   text-transform: uppercase;
   cursor: pointer;
 }
+<<<<<<< HEAD
 .navbar__consult:hover {
   background-color: #EC4D5D;
   color: #FFFFFF;
   transition: 1s;
 }
+=======
+>>>>>>> 1089d548edc370615e2e64915571fe9bc27024b5
 
 .main {
   background-color: #F7F9F9;

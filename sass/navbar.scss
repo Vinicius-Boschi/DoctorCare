@@ -108,7 +108,11 @@
         }
     }
 
+<<<<<<< HEAD
     &__button {   
+=======
+    &__button {     
+>>>>>>> 1089d548edc370615e2e64915571fe9bc27024b5
         @include for-phone-only {
             display: flex;
             flex-direction: column;
@@ -137,11 +141,14 @@
         padding: 0.5rem;
         text-transform: uppercase;
         cursor: pointer;
+<<<<<<< HEAD
 
         &:hover {
             background-color: $brand-red-hover;
             color: $white;
             transition: 1s;
         }   
+=======
+>>>>>>> 1089d548edc370615e2e64915571fe9bc27024b5
     }
 }

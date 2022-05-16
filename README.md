@@ -9,7 +9,7 @@ O objetivo deste site é treinar construção de site, usando HTML, CSS, JS e SA
 Desafio proposto pela NLW da RocketSeat.
 
 2. Seção Inicial<br><br>
-<img src="img/home.jpg" alt="home do site"> 
+<img src="img/home-site.jpg" alt="home do site"> 
 
 3. Tecnologia usadas: <br>
 

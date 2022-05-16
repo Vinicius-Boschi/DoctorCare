@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+//Primary Colors
+$brand-blue: #468ECB;
+$brand-blue-light: #93C9F7;
+$brand-red-light: #DF6D79;
+$brand-light: #F7F9F9;
+$brand-beige: #FFFAF1;
+$brand-red-hover: #EC4D5D;
+
+//Secondary Colors
+$gray-headline: #061800;
+$gray-paragraph: #6F6F6F;
+$white: #FFFFFF;
+
+@mixin for-phone-only {
+    @media (min-width: 375px) and (max-width: 999px) { @content; }
+}
+
+html {
+    font-family: 'DM Sans';
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $brand-light;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $brand-blue;
+    border-radius: 30px;
+    visibility: visible;
+}
+
+@import 'navbar', 'main', 'footer'
